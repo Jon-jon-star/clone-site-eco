@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    //border: 1px solid white;
+}
+
+body{
+    width: 100%;
+    height: 200vh;
+}
+
+//div, a{
+    //border: 1px solid #000;
+//}
+
+
+.btn{//botão
+    border-radius: .5rem;
+    background-color: #a8a6a1;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover{
+        opacity: 0.8;
+    }
+}//fim botao
+
+.header{ //topo
+    border: none; //////
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    padding: 25px;
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 20%;
+        font-size: 32px;
+        margin-right: 1rem;
+        color: white;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 50%;
+
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        
+        li, a{
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+    .local-btn{
+        display: flex;
+        flex: 10%;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            width: 160px;
+            height: 47px;
+            text-align: center;
+            line-height: 47px;
+            text-decoration: none;
+        }
+    }
+}//topo fim
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 613px;
+    background-image: url('/imagens/banner.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: 50%;
+    margin-bottom: 3rem;
+
+    .slogan{
+        width: 600px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+
+        h4{
+            width: 100%;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            color: white;
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+        h1{
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 64px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            line-height: 80px;
+            padding: 3px;
+        }
+
+        .botao{
+            height: 63px;
+            width: 155px;
+            line-height: 63px;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}//fim banner
+
+.resto{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}//fim resto
