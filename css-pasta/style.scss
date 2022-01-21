@@ -10,12 +10,8 @@
 
 body{
     width: 100%;
-    height: 200vh;
+    height: 400vh;
 }
-
-//div, a{
-    //border: 1px solid #000;
-//}
 
 
 .btn{//botão
@@ -24,14 +20,32 @@ body{
     color: #ffffff;
     font-size: 14px;
     text-decoration: none;
-
+    
     &:hover{
         opacity: 0.8;
     }
 }//fim botao
 
+.botao{//botao2
+    height: 63px;
+    width: 155px;
+    line-height: 63px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.subtitulos{//subtitulos
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}//fim subtitulos
+
+.text{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
 .header{ //topo
-    border: none; //////
     position: absolute;
     top: 0; left: 0; right: 0;
     display: flex;
@@ -71,13 +85,12 @@ body{
         flex: 10%;
         justify-content: center;
         align-items: center;
-        
+
         a{
             width: 160px;
             height: 47px;
             text-align: center;
             line-height: 47px;
-            text-decoration: none;
         }
     }
 }//topo fim
@@ -123,14 +136,42 @@ body{
             line-height: 80px;
             padding: 3px;
         }
-
-        .botao{
-            height: 63px;
-            width: 155px;
-            line-height: 63px;
-            text-align: center;
-            font-size: 16px;
-        }
     }
 }//fim banner
 
+.content{
+    max-width: 97%;
+    margin: 0 auto;
+
+    .box{
+        text-align: center;
+        width: 900px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .content-text2{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+
+        .imagem{
+            width: 600px;
+            height: 494px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .box2{
+            text-align: center;
+            width: 500px;
+            margin: auto;
+
+            .botao{
+                margin: 0 auto;
+            }
+        }
+    }
+}
